@@ -40,7 +40,7 @@ public class FileUploadController {
     * Cool thing: "the filed photo exceeds its maximum permitted size of xx bytes"
     *
     * Result of running:
-    c:\users\liu\xxx\temp\tomcat-xxx.xxx\upload\
+    c:/users/liu/xxx/temp/tomcat-xxx.xxx/upload/
     * this is the dynamic path automatically located by idea
     *  */
 
@@ -54,7 +54,7 @@ public class FileUploadController {
         File file = new File(path+photo.getOriginalFilename());
         //write it into disk
         photo.transferTo(file);
-        //what we have eventually - c:\users\xx\tomcat-xxx.xxx\upload\filename -> photo
+        //what we have eventually - c:/users/xx/tomcat-xxx.xxx/upload/filename -> photo
     }
 
 
